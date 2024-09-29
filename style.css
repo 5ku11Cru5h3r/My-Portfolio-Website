@@ -58,6 +58,18 @@ header {
     font-size: 5em;
     color: bisque;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+    animation: type 3s steps(19);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@keyframes type {
+    0% {
+        width: 0ch;
+    }
+    100% {
+        width: 100%;
+    }
 }
 
 .parallax img {
@@ -74,14 +86,8 @@ header {
     padding: 100;
 }
 
-.sec h2 {
-    font-size: 3em;
-    color: #fff;
-    margin-bottom: 10px;
-}
-
 .sec p {
-    font-size: 1em;
+    font-size: 3em;
     color: white;
     font-weight: 300;
 }
